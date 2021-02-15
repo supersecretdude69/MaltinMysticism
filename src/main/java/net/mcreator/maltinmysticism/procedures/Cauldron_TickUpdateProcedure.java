@@ -72,42 +72,42 @@ public class Cauldron_TickUpdateProcedure extends MaltinmysticismModElements.Mod
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockCauldronBlueBlock.block.getDefaultState()
 					.getBlock())) {
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleBubbleBlueParticle.particle, x, (y + 0.5), z, (int) 3, 0.1, 0.1, 0.1, 0);
+					((ServerWorld) world).spawnParticle(ParticleBubbleBlueParticle.particle, x, (y + 0.5), x, (int) 3, 0.3, 0.3, 0.3, 0);
 				}
 			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockCauldronGreenBlock.block.getDefaultState()
 					.getBlock())) {
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleBubbleGreenParticle.particle, x, (y + 0.5), z, (int) 3, 0.1, 0.1, 0.1, 0);
+					((ServerWorld) world).spawnParticle(ParticleBubbleGreenParticle.particle, x, (y + 0.5), z, (int) 3, 0.3, 0.3, 0.3, 0);
 				}
 			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockCauldronRedBlock.block.getDefaultState()
 					.getBlock())) {
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleBubbleRedParticle.particle, x, (y + 0.5), z, (int) 3, 0.1, 0.1, 0.1, 0);
+					((ServerWorld) world).spawnParticle(ParticleBubbleRedParticle.particle, x, (y + 0.5), z, (int) 3, 0.3, 0.3, 0.3, 0);
 				}
 			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockCauldronPurpleBlock.block.getDefaultState()
 					.getBlock())) {
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleBubblePurpleParticle.particle, x, (y + 0.5), z, (int) 3, 0.1, 0.1, 0.1, 0);
+					((ServerWorld) world).spawnParticle(ParticleBubblePurpleParticle.particle, x, (y + 0.5), z, (int) 3, 0.3, 0.3, 0.3, 0);
 				}
 			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockCauldronYellowBlock.block.getDefaultState()
 					.getBlock())) {
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleBubbleYellowParticle.particle, x, (y + 0.5), z, (int) 3, 0.1, 0.1, 0.1, 0);
+					((ServerWorld) world).spawnParticle(ParticleBubbleYellowParticle.particle, x, (y + 0.5), z, (int) 3, 0.3, 0.3, 0.3, 0);
 				}
 			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockCauldronBlackBlock.block.getDefaultState()
 					.getBlock())) {
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleBubbleBlackParticle.particle, x, (y + 0.5), z, (int) 3, 0.1, 0.1, 0.1, 0);
+					((ServerWorld) world).spawnParticle(ParticleBubbleBlackParticle.particle, x, (y + 0.5), z, (int) 3, 0.3, 0.3, 0.3, 0);
 				}
 			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockCauldronWhiteBlock.block.getDefaultState()
 					.getBlock())) {
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleBubbleWhiteParticle.particle, x, (y + 0.5), z, (int) 3, 0.1, 0.1, 0.1, 0);
+					((ServerWorld) world).spawnParticle(ParticleBubbleWhiteParticle.particle, x, (y + 0.5), z, (int) 3, 0.3, 0.3, 0.3, 0);
 				}
 			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == BlockCauldronGreyBlock.block.getDefaultState()
 					.getBlock())) {
 				if (world instanceof ServerWorld) {
-					((ServerWorld) world).spawnParticle(ParticleBubbleGreyParticle.particle, x, (y + 0.5), z, (int) 3, 0.1, 0.1, 0.1, 0);
+					((ServerWorld) world).spawnParticle(ParticleBubbleGreyParticle.particle, x, (y + 0.5), z, (int) 3, 0.3, 0.3, 0.3, 0);
 				}
 			}
 		}

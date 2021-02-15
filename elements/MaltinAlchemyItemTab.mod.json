@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "coal_dust",
+    "texture": "maltinalchemyitem",
     "customModelName": "Normal",
-    "name": "Coal Powder",
+    "name": "Maltin Alchemy Item Tab",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:MaltinAlchemy"
+      "value": "No creative tab entry"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -23,7 +23,9 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "The item representing the icon for the creative tab"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

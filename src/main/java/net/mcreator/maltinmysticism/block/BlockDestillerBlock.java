@@ -72,13 +72,13 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @MaltinmysticismModElements.ModElement.Tag
-public class BlockMortarandpestleBlock extends MaltinmysticismModElements.ModElement {
-	@ObjectHolder("maltinmysticism:block_mortarandpestle")
+public class BlockDestillerBlock extends MaltinmysticismModElements.ModElement {
+	@ObjectHolder("maltinmysticism:block_destiller")
 	public static final Block block = null;
-	@ObjectHolder("maltinmysticism:block_mortarandpestle")
+	@ObjectHolder("maltinmysticism:block_destiller")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public BlockMortarandpestleBlock(MaltinmysticismModElements instance) {
-		super(instance, 19);
+	public BlockDestillerBlock(MaltinmysticismModElements instance) {
+		super(instance, 25);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -91,8 +91,7 @@ public class BlockMortarandpestleBlock extends MaltinmysticismModElements.ModEle
 
 	@SubscribeEvent
 	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry()
-				.register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("block_mortarandpestle"));
+		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("block_destiller"));
 	}
 
 	@Override
@@ -105,7 +104,7 @@ public class BlockMortarandpestleBlock extends MaltinmysticismModElements.ModEle
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("block_mortarandpestle");
+			setRegistryName("block_destiller");
 		}
 
 		@Override
@@ -287,7 +286,7 @@ public class BlockMortarandpestleBlock extends MaltinmysticismModElements.ModEle
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("block_mortarandpestle");
+			return new StringTextComponent("block_destiller");
 		}
 
 		@Override

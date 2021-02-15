@@ -284,6 +284,33 @@
           }
         ]
       }
+    },
+    {
+      "name": "MaltinAlchemyItemTab",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maltin_alchemy_item_tab"
+    },
+    {
+      "name": "BlockDestiller",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_destiller"
+    },
+    {
+      "name": "ItemSalt",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_salt"
     }
   ],
   "variable_elements": [],
@@ -294,15 +321,18 @@
       "block.maltinmysticism.block_cauldron_blue": "Cauldron (Blue)",
       "itemGroup.tabmaltin_alchemy": "Maltin Alchemy",
       "block.maltinmysticism.block_cauldron_black": "Cauldron (Black)",
+      "item.maltinmysticism.maltin_alchemy_item_tab": "Maltin Alchemy Item Tab",
+      "block.maltinmysticism.block_destiller": "Mortar and Pestle",
       "block.maltinmysticism.block_cauldron_yellow": "Cauldron (Yellow)",
       "block.maltinmysticism.block_cauldron_grey": "Cauldron (Grey)",
-      "item.maltinmysticism.item_coal_powder": "Lapiz Powder",
+      "item.maltinmysticism.item_coal_powder": "Coal Powder",
       "block.maltinmysticism.block_cauldron_white": "Cauldron (White)",
       "block.maltinmysticism.block_cauldron_red": "Cauldron (Red)",
       "block.maltinmysticism.block_mortarandpestle": "Mortar and Pestle",
       "item.maltinmysticism.item_lapiz_powder": "Lapiz Powder",
       "block.maltinmysticism.block_cauldron_purple": "Cauldron (Purple)",
-      "block.maltinmysticism.block_cauldron_empty": "Empty Cauldron"
+      "block.maltinmysticism.block_cauldron_empty": "Empty Cauldron",
+      "item.maltinmysticism.item_salt": "Salt Powder"
     }
   },
   "workspaceSettings": {

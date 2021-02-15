@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "coal_dust",
+    "texture": "salt",
     "customModelName": "Normal",
-    "name": "Coal Powder",
+    "name": "Salt Powder",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:MaltinAlchemy"

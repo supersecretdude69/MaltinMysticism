@@ -4,7 +4,7 @@
   "definition": {
     "name": "Maltin Alchemy",
     "icon": {
-      "value": "CUSTOM:ItemLapizPowder"
+      "value": "CUSTOM:MaltinAlchemyItemTab"
     },
     "showSearch": true
   }

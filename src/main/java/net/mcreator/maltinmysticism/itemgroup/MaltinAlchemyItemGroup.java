@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.maltinmysticism.item.ItemLapizPowderItem;
+import net.mcreator.maltinmysticism.item.MaltinAlchemyItemTabItem;
 import net.mcreator.maltinmysticism.MaltinmysticismModElements;
 
 @MaltinmysticismModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class MaltinAlchemyItemGroup extends MaltinmysticismModElements.ModElemen
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(ItemLapizPowderItem.block, (int) (1));
+				return new ItemStack(MaltinAlchemyItemTabItem.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)
