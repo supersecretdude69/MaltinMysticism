@@ -311,27 +311,314 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "item_salt"
+    },
+    {
+      "name": "PutThingIntoCauldron",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "put_thing_into_cauldron",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SiliconPowder",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silicon_powder"
+    },
+    {
+      "name": "ItemIronDust",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_iron_dust"
+    },
+    {
+      "name": "ItemGoldDust",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_gold_dust"
+    },
+    {
+      "name": "ItemSilverDust",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_silver_dust"
+    },
+    {
+      "name": "CauldronRecipeRed",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cauldron_recipe_red",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CauldronRecipeGreen",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cauldron_recipe_green",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CauldronRecipeYellow",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cauldron_recipe_yellow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CauldronRecipeBlue",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cauldron_recipe_blue",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DryMushroomPowder",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dry_mushroom_powder"
+    },
+    {
+      "name": "PowderedSoupRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "powdered_soup_recipe"
+    },
+    {
+      "name": "GlassVial",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glass_vial"
+    },
+    {
+      "name": "VialPotionHealth",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vial_potion_health"
+    },
+    {
+      "name": "DrinkPotion",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drink_potion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VialPotionAgility",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vial_potion_agility"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.maltinmysticism.block_cauldron_green": "Cauldron (Green)",
       "block.maltinmysticism.block_cauldron_blue": "Cauldron (Blue)",
-      "itemGroup.tabmaltin_alchemy": "Maltin Alchemy",
-      "block.maltinmysticism.block_cauldron_black": "Cauldron (Black)",
       "item.maltinmysticism.maltin_alchemy_item_tab": "Maltin Alchemy Item Tab",
-      "block.maltinmysticism.block_destiller": "Mortar and Pestle",
-      "block.maltinmysticism.block_cauldron_yellow": "Cauldron (Yellow)",
+      "item.maltinmysticism.item_gold_dust": "Gold Powder",
+      "item.maltinmysticism.vial_potion_health": "Vial of Healing",
       "block.maltinmysticism.block_cauldron_grey": "Cauldron (Grey)",
-      "item.maltinmysticism.item_coal_powder": "Coal Powder",
-      "block.maltinmysticism.block_cauldron_white": "Cauldron (White)",
+      "item.maltinmysticism.glass_vial": "Glass Vial",
       "block.maltinmysticism.block_cauldron_red": "Cauldron (Red)",
       "block.maltinmysticism.block_mortarandpestle": "Mortar and Pestle",
       "item.maltinmysticism.item_lapiz_powder": "Lapiz Powder",
-      "block.maltinmysticism.block_cauldron_purple": "Cauldron (Purple)",
       "block.maltinmysticism.block_cauldron_empty": "Empty Cauldron",
+      "item.maltinmysticism.item_iron_dust": "Iron Powder",
+      "item.maltinmysticism.dry_mushroom_powder": "Dry Mushroom Powder",
+      "block.maltinmysticism.block_cauldron_green": "Cauldron (Green)",
+      "itemGroup.tabmaltin_alchemy": "Maltin Alchemy",
+      "item.maltinmysticism.item_silver_dust": "Silver Powder",
+      "block.maltinmysticism.block_cauldron_black": "Cauldron (Black)",
+      "block.maltinmysticism.block_destiller": "Destiller",
+      "block.maltinmysticism.block_cauldron_yellow": "Cauldron (Yellow)",
+      "item.maltinmysticism.item_coal_powder": "Coal Powder",
+      "item.maltinmysticism.silicon_powder": "Silicon Powder",
+      "item.maltinmysticism.vial_potion_agility": "Vial of Agility",
+      "block.maltinmysticism.block_cauldron_white": "Cauldron (White)",
+      "block.maltinmysticism.block_cauldron_purple": "Cauldron (Purple)",
       "item.maltinmysticism.item_salt": "Salt Powder"
     }
   },

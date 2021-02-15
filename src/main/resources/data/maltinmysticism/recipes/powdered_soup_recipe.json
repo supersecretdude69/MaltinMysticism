@@ -1,0 +1,22 @@
+{
+  "group": "maltinmysticism",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maltinmysticism:dry_mushroom_powder"
+    },
+    {
+      "item": "minecraft:potion"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "maltinmysticism:item_salt"
+    }
+  ],
+  "result": {
+    "item": "minecraft:mushroom_stew",
+    "count": 1
+  }
+}

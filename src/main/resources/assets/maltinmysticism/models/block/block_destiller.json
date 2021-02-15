@@ -1,8 +1,8 @@
 {
-  "parent": "maltinmysticism:custom/morterandpestlemodel",
+  "parent": "maltinmysticism:custom/destillermodel",
   "textures": {
-    "all": "maltinmysticism:blocks/mortarandpestletexture",
-    "particle": "maltinmysticism:blocks/mortarandpestletexture",
-    "0": "maltinmysticism:blocks/mortarandpestletexture"
+    "all": "maltinmysticism:blocks/destillertexture",
+    "particle": "maltinmysticism:blocks/destillertexture",
+    "1": "maltinmysticism:blocks/destillertexture"
   }
 }

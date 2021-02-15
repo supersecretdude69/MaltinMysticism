@@ -2,18 +2,18 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "mortarandpestletexture",
+    "texture": "destillertexture",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "morterandpestlemodel:default",
+    "customModelName": "destillermodel:default",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "mortalandpestleicon",
+    "itemTexture": "maltinalchemyitem",
     "particleTexture": "",
     "hasTransparency": true,
     "connectedSides": false,
@@ -24,7 +24,7 @@
     "Mx": 0.7,
     "My": 0.5,
     "Mz": 0.7,
-    "name": "Mortar and Pestle",
+    "name": "Destiller",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -45,7 +45,7 @@
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "GLASS"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -63,7 +63,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "GLASS"
     },
     "luminance": 0.0,
     "unbreakable": false,
