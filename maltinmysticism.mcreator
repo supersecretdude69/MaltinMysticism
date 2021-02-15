@@ -1,10 +1,309 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "BlockCauldronEmpty",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_empty"
+    },
+    {
+      "name": "BlockCauldronBlue",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_blue"
+    },
+    {
+      "name": "BlockCauldronGreen",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_green"
+    },
+    {
+      "name": "BlockCauldronRed",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_red"
+    },
+    {
+      "name": "BlockCauldronPurple",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_purple"
+    },
+    {
+      "name": "BlockCauldronYellow",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_yellow"
+    },
+    {
+      "name": "BlockCauldronBlack",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_black"
+    },
+    {
+      "name": "BlockCauldronWhite",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_white"
+    },
+    {
+      "name": "BlockCauldronGrey",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_cauldron_grey"
+    },
+    {
+      "name": "Cauldron_TickUpdate",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cauldron_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ParticleBubbleRed",
+      "type": "particle",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_bubble_red"
+    },
+    {
+      "name": "ParticleBubbleBlue",
+      "type": "particle",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_bubble_blue"
+    },
+    {
+      "name": "ParticleBubbleGrey",
+      "type": "particle",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_bubble_grey"
+    },
+    {
+      "name": "ParticleBubbleBlack",
+      "type": "particle",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_bubble_black"
+    },
+    {
+      "name": "ParticleBubbleGreen",
+      "type": "particle",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_bubble_green"
+    },
+    {
+      "name": "ParticleBubbleWhite",
+      "type": "particle",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_bubble_white"
+    },
+    {
+      "name": "ParticleBubbleYellow",
+      "type": "particle",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_bubble_yellow"
+    },
+    {
+      "name": "ParticleBubblePurple",
+      "type": "particle",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_bubble_purple"
+    },
+    {
+      "name": "BlockMortarandpestle",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_mortarandpestle"
+    },
+    {
+      "name": "ItemLapizPowder",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_lapiz_powder"
+    },
+    {
+      "name": "MaltinAlchemy",
+      "type": "tab",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maltin_alchemy"
+    },
+    {
+      "name": "ItemCoalPowder",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_coal_powder"
+    },
+    {
+      "name": "Use_Mortarandpestle",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "use_mortarandpestle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FillEmptyCauldron",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fill_empty_cauldron",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.maltinmysticism.block_cauldron_green": "Cauldron (Green)",
+      "block.maltinmysticism.block_cauldron_blue": "Cauldron (Blue)",
+      "itemGroup.tabmaltin_alchemy": "Maltin Alchemy",
+      "block.maltinmysticism.block_cauldron_black": "Cauldron (Black)",
+      "block.maltinmysticism.block_cauldron_yellow": "Cauldron (Yellow)",
+      "block.maltinmysticism.block_cauldron_grey": "Cauldron (Grey)",
+      "item.maltinmysticism.item_coal_powder": "Lapiz Powder",
+      "block.maltinmysticism.block_cauldron_white": "Cauldron (White)",
+      "block.maltinmysticism.block_cauldron_red": "Cauldron (Red)",
+      "block.maltinmysticism.block_mortarandpestle": "Mortar and Pestle",
+      "item.maltinmysticism.item_lapiz_powder": "Lapiz Powder",
+      "block.maltinmysticism.block_cauldron_purple": "Cauldron (Purple)",
+      "block.maltinmysticism.block_cauldron_empty": "Empty Cauldron"
+    }
   },
   "workspaceSettings": {
     "modid": "maltinmysticism",

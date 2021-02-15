@@ -1,0 +1,58 @@
+{
+  "mappings": {
+    "colour_green": {
+      "map": {
+        "2": "cauldron_texture_green"
+      },
+      "name": "colour_green"
+    },
+    "colour_red": {
+      "map": {
+        "2": "cauldron_texture_red"
+      },
+      "name": "colour_red"
+    },
+    "default": {
+      "map": {
+        "2": "cauldron_texture_empty"
+      },
+      "name": "default"
+    },
+    "colour_black": {
+      "map": {
+        "2": "cauldron_texture_black"
+      },
+      "name": "colour_black"
+    },
+    "colour_grey": {
+      "map": {
+        "2": "cauldron_texture_grey"
+      },
+      "name": "colour_grey"
+    },
+    "colour_pruple": {
+      "map": {
+        "2": "cauldron_texture_purple"
+      },
+      "name": "colour_pruple"
+    },
+    "colour_white": {
+      "map": {
+        "2": "cauldron_texture_white"
+      },
+      "name": "colour_white"
+    },
+    "colour_blue": {
+      "map": {
+        "2": "cauldron_texture_blue"
+      },
+      "name": "colour_blue"
+    },
+    "colour_yellow": {
+      "map": {
+        "2": "cauldron_texture_yellow"
+      },
+      "name": "colour_yellow"
+    }
+  }
+}

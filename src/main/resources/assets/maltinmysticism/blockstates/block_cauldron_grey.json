@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "maltinmysticism:block/block_cauldron_grey"
+    },
+    "facing=east": {
+      "model": "maltinmysticism:block/block_cauldron_grey",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "maltinmysticism:block/block_cauldron_grey",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "maltinmysticism:block/block_cauldron_grey",
+      "y": 270
+    }
+  }
+}

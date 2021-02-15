@@ -1,1 +1,15 @@
-{}
+{
+  "block.maltinmysticism.block_cauldron_green": "Cauldron (Green)",
+  "block.maltinmysticism.block_cauldron_blue": "Cauldron (Blue)",
+  "itemGroup.tabmaltin_alchemy": "Maltin Alchemy",
+  "block.maltinmysticism.block_cauldron_black": "Cauldron (Black)",
+  "block.maltinmysticism.block_cauldron_yellow": "Cauldron (Yellow)",
+  "block.maltinmysticism.block_cauldron_grey": "Cauldron (Grey)",
+  "item.maltinmysticism.item_coal_powder": "Lapiz Powder",
+  "block.maltinmysticism.block_cauldron_white": "Cauldron (White)",
+  "block.maltinmysticism.block_cauldron_red": "Cauldron (Red)",
+  "block.maltinmysticism.block_mortarandpestle": "Mortar and Pestle",
+  "item.maltinmysticism.item_lapiz_powder": "Lapiz Powder",
+  "block.maltinmysticism.block_cauldron_purple": "Cauldron (Purple)",
+  "block.maltinmysticism.block_cauldron_empty": "Empty Cauldron"
+}

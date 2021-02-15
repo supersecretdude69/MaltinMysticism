@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "maltinmysticism:block/block_mortarandpestle"
+    },
+    "facing=east": {
+      "model": "maltinmysticism:block/block_mortarandpestle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "maltinmysticism:block/block_mortarandpestle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "maltinmysticism:block/block_mortarandpestle",
+      "y": 270
+    }
+  }
+}
