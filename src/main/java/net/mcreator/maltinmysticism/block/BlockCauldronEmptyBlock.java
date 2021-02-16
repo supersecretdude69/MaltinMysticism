@@ -59,7 +59,7 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.maltinmysticism.procedures.FillEmptyCauldronProcedure;
+import net.mcreator.maltinmysticism.procedures.PutItemIntoCauldronProcedure;
 import net.mcreator.maltinmysticism.itemgroup.MaltinAlchemyItemGroup;
 import net.mcreator.maltinmysticism.MaltinmysticismModElements;
 
@@ -177,7 +177,7 @@ public class BlockCauldronEmptyBlock extends MaltinmysticismModElements.ModEleme
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				FillEmptyCauldronProcedure.executeProcedure($_dependencies);
+				PutItemIntoCauldronProcedure.executeProcedure($_dependencies);
 			}
 			return ActionResultType.SUCCESS;
 		}

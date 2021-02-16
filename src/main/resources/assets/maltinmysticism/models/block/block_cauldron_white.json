@@ -1,8 +1,0 @@
-{
-  "parent": "maltinmysticism:custom/cauldronmodel",
-  "textures": {
-    "all": "maltinmysticism:blocks/cauldron_texture_empty",
-    "particle": "maltinmysticism:blocks/cauldron_texture_empty",
-    "2": "maltinmysticism:blocks/cauldron_texture_white"
-  }
-}
