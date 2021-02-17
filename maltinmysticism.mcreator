@@ -47,39 +47,6 @@
       "registry_name": "item_coal_powder"
     },
     {
-      "name": "Use_Mortarandpestle",
-      "type": "procedure",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "use_mortarandpestle",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "MaltinAlchemyItemTab",
       "type": "item",
       "sortid": 24,
@@ -305,415 +272,219 @@
       "registry_name": "item_wivex"
     },
     {
-      "name": "ItemSpyglass",
-      "type": "item",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "item_spyglass"
-    },
-    {
-      "name": "HasCataline",
-      "type": "procedure",
+      "name": "GuiCauldronCraft",
+      "type": "gui",
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_cataline",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "gui_cauldron_craft"
     },
     {
-      "name": "HasColgas",
+      "name": "TakeItemFromCauldronTable",
       "type": "procedure",
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_colgas",
+      "registry_name": "take_item_from_cauldron_table",
       "metadata": {
-        "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
     },
     {
-      "name": "HasConzazite",
+      "name": "CatalineRecipe",
       "type": "procedure",
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_conzazite",
+      "registry_name": "cataline_recipe",
       "metadata": {
-        "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
     },
     {
-      "name": "HasDetontium",
+      "name": "CraftingCauldronBase",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crafting_cauldron_base",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClearSlotZero",
       "type": "procedure",
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_detontium",
+      "registry_name": "clear_slot_zero",
       "metadata": {
-        "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
     },
     {
-      "name": "HasEnfax",
-      "type": "procedure",
+      "name": "GuiMorterandpestleCraft",
+      "type": "gui",
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_enfax",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "gui_morterandpestle_craft"
     },
     {
-      "name": "HasFructium",
+      "name": "MortarandPestleRecipeCore",
       "type": "procedure",
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_fructium",
+      "registry_name": "mortarand_pestle_recipe_core",
       "metadata": {
-        "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
     },
     {
-      "name": "HasInfax",
-      "type": "procedure",
+      "name": "GuiExtractorCraft",
+      "type": "gui",
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_infax",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "gui_extractor_craft"
     },
     {
-      "name": "HasMovil",
+      "name": "DryerRecipeCore",
       "type": "procedure",
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_movil",
+      "registry_name": "dryer_recipe_core",
       "metadata": {
-        "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
     },
     {
-      "name": "HasOuvliq",
+      "name": "TakeItemFromDryerTable",
       "type": "procedure",
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_ouvliq",
+      "registry_name": "take_item_from_dryer_table",
       "metadata": {
-        "return_type": "LOGIC",
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
     },
     {
-      "name": "HasRemotum",
-      "type": "procedure",
+      "name": "ItemBenzole",
+      "type": "item",
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_remotum",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "item_benzole"
     },
     {
-      "name": "HasRozite",
-      "type": "procedure",
+      "name": "Benzole",
+      "type": "fuel",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "benzole"
+    },
+    {
+      "name": "BenzoleRecipe",
+      "type": "recipe",
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_rozite",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "benzole_recipe"
     },
     {
-      "name": "HasSilithium",
-      "type": "procedure",
+      "name": "HumunculusEgg",
+      "type": "item",
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_silithium",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "humunculus_egg"
     },
     {
-      "name": "HasTempest",
-      "type": "procedure",
+      "name": "HomunculusEggRecipe",
+      "type": "recipe",
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_tempest",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "homunculus_egg_recipe"
     },
     {
-      "name": "HasVeoline",
+      "name": "Homunculus",
+      "type": "mob",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "homunculus"
+    },
+    {
+      "name": "HumunculusEggRightClickedOnBlock",
       "type": "procedure",
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_veoline",
+      "registry_name": "humunculus_egg_right_clicked_on_block",
       "metadata": {
-        "return_type": "LOGIC",
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -734,147 +505,34 @@
       }
     },
     {
-      "name": "HasWarp",
-      "type": "procedure",
+      "name": "HomunculusSit",
+      "type": "mob",
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "has_warp",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "HasWivex",
-      "type": "procedure",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "has_wivex",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "AddEssenceToCauldron",
-      "type": "procedure",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "add_essence_to_cauldron",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlockCauldronEmptyOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "block_cauldron_empty_on_block_right_clicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "homunculus_sit"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "entity.maltinmysticism.homunculus_sit": "Homunculus (Sitting)",
       "item.maltinmysticism.item_infax": "Infax",
       "item.maltinmysticism.item_silithium": "Silithium",
       "item.maltinmysticism.maltin_alchemy_item_tab": "Maltin Alchemy Item Tab",
       "item.maltinmysticism.item_gold_dust": "Gold Powder",
       "item.maltinmysticism.item_remotum": "Remotum",
       "item.maltinmysticism.item_fructium": "Fructium",
+      "item.maltinmysticism.homunculus_sit_spawn_egg": "Homunculus (Sitting) Spawn Egg",
       "item.maltinmysticism.item_cataline": "Cataline",
       "item.maltinmysticism.item_tempest": "Tempest",
+      "item.maltinmysticism.homunculus_spawn_egg": "Homunculus Spawn Egg",
       "block.maltinmysticism.block_mortarandpestle": "Mortar and Pestle",
       "item.maltinmysticism.item_lapiz_powder": "Lapiz Powder",
       "block.maltinmysticism.block_cauldron_empty": "Empty Cauldron",
+      "entity.maltinmysticism.homunculus": "Homunculus",
       "item.maltinmysticism.item_ouvliq": "Ouvliq",
       "item.maltinmysticism.item_veoline": "Veoline",
       "item.maltinmysticism.item_colgas": "Colgas",
@@ -884,7 +542,6 @@
       "item.maltinmysticism.item_silver_dust": "Silver Powder",
       "block.maltinmysticism.block_destiller": "Destiller",
       "item.maltinmysticism.item_warp": "Warp",
-      "item.maltinmysticism.item_spyglass": "Item Spyglass",
       "item.maltinmysticism.item_movil": "Movil",
       "item.maltinmysticism.item_coal_powder": "Coal Powder",
       "item.maltinmysticism.item_conzazite": "Conzazite",
@@ -893,7 +550,9 @@
       "item.maltinmysticism.silicon_powder": "Silicon Powder",
       "item.maltinmysticism.item_rozite": "Rozite",
       "item.maltinmysticism.item_wivex": "Wivex",
-      "item.maltinmysticism.item_salt": "Salt Powder"
+      "item.maltinmysticism.item_salt": "Salt Powder",
+      "item.maltinmysticism.humunculus_egg": "Homunculus Egg",
+      "item.maltinmysticism.item_benzole": "Benzole"
     }
   },
   "workspaceSettings": {

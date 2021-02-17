@@ -1,0 +1,27 @@
+{
+  "group": "maltinmysticism",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 ",
+    "23",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "maltinmysticism:item_veoline"
+    },
+    "2": {
+      "item": "minecraft:egg"
+    },
+    "3": {
+      "item": "maltinmysticism:item_fructium"
+    },
+    "4": {
+      "item": "maltinmysticism:item_infax"
+    }
+  },
+  "result": {
+    "item": "maltinmysticism:humunculus_egg",
+    "count": 1
+  }
+}

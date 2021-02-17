@@ -1,0 +1,330 @@
+{
+  "_fv": 13,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 38,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "guilayout.png",
+          "use1Xscale": false,
+          "name": "guilayout.png",
+          "x": 165,
+          "y": 29
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "TakeItemFromCauldronTable"
+          },
+          "onStackTransfer": {
+            "name": "TakeItemFromCauldronTable"
+          },
+          "name": "Slot #0",
+          "x": 208,
+          "y": 73
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemCataline"
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #1",
+          "x": 205,
+          "y": 11
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemSilithium"
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #2",
+          "x": 207,
+          "y": 134
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemInfax"
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #3",
+          "x": 267,
+          "y": 69
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemEnfax"
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #4",
+          "x": 146,
+          "y": 69
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemWarp"
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #5",
+          "x": 267,
+          "y": 92
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemFructium"
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #6",
+          "x": 267,
+          "y": 47
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemWivex"
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #7",
+          "x": 146,
+          "y": 47
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemOuvliq"
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #8",
+          "x": 146,
+          "y": 92
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemTempest"
+          },
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #9",
+          "x": 228,
+          "y": 134
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemRozite"
+          },
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #10",
+          "x": 186,
+          "y": 134
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemColgas"
+          },
+          "id": 11,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #11",
+          "x": 184,
+          "y": 11
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemConzazite"
+          },
+          "id": 12,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #12",
+          "x": 226,
+          "y": 11
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemDetontium"
+          },
+          "id": 13,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #13",
+          "x": 146,
+          "y": 11
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemRemotum"
+          },
+          "id": 14,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #14",
+          "x": 146,
+          "y": 133
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemMovil"
+          },
+          "id": 15,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #15",
+          "x": 267,
+          "y": 11
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ItemVeoline"
+          },
+          "id": 16,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ClearSlotZero"
+          },
+          "name": "Slot #16",
+          "x": 267,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cauldron",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Cauldron",
+          "x": 194,
+          "y": 1
+        }
+      }
+    ],
+    "onTick": {
+      "name": "CraftingCauldronBase"
+    }
+  }
+}

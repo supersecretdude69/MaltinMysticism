@@ -1,15 +1,19 @@
 {
+  "entity.maltinmysticism.homunculus_sit": "Homunculus (Sitting)",
   "item.maltinmysticism.item_infax": "Infax",
   "item.maltinmysticism.item_silithium": "Silithium",
   "item.maltinmysticism.maltin_alchemy_item_tab": "Maltin Alchemy Item Tab",
   "item.maltinmysticism.item_gold_dust": "Gold Powder",
   "item.maltinmysticism.item_remotum": "Remotum",
   "item.maltinmysticism.item_fructium": "Fructium",
+  "item.maltinmysticism.homunculus_sit_spawn_egg": "Homunculus (Sitting) Spawn Egg",
   "item.maltinmysticism.item_cataline": "Cataline",
   "item.maltinmysticism.item_tempest": "Tempest",
+  "item.maltinmysticism.homunculus_spawn_egg": "Homunculus Spawn Egg",
   "block.maltinmysticism.block_mortarandpestle": "Mortar and Pestle",
   "item.maltinmysticism.item_lapiz_powder": "Lapiz Powder",
   "block.maltinmysticism.block_cauldron_empty": "Empty Cauldron",
+  "entity.maltinmysticism.homunculus": "Homunculus",
   "item.maltinmysticism.item_ouvliq": "Ouvliq",
   "item.maltinmysticism.item_veoline": "Veoline",
   "item.maltinmysticism.item_colgas": "Colgas",
@@ -19,7 +23,6 @@
   "item.maltinmysticism.item_silver_dust": "Silver Powder",
   "block.maltinmysticism.block_destiller": "Destiller",
   "item.maltinmysticism.item_warp": "Warp",
-  "item.maltinmysticism.item_spyglass": "Item Spyglass",
   "item.maltinmysticism.item_movil": "Movil",
   "item.maltinmysticism.item_coal_powder": "Coal Powder",
   "item.maltinmysticism.item_conzazite": "Conzazite",
@@ -28,5 +31,7 @@
   "item.maltinmysticism.silicon_powder": "Silicon Powder",
   "item.maltinmysticism.item_rozite": "Rozite",
   "item.maltinmysticism.item_wivex": "Wivex",
-  "item.maltinmysticism.item_salt": "Salt Powder"
+  "item.maltinmysticism.item_salt": "Salt Powder",
+  "item.maltinmysticism.humunculus_egg": "Homunculus Egg",
+  "item.maltinmysticism.item_benzole": "Benzole"
 }

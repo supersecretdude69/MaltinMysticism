@@ -1,0 +1,16 @@
+{
+  "group": "maltinmysticism",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "item": "maltinmysticism:item_rozite"
+    }
+  ],
+  "result": {
+    "item": "maltinmysticism:item_benzole",
+    "count": 1
+  }
+}

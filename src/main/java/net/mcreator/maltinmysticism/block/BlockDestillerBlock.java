@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -37,6 +38,7 @@ import net.minecraft.tileentity.LockableLootTileEntity;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
@@ -45,10 +47,10 @@ import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.ChestContainer;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -59,17 +61,17 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.maltinmysticism.procedures.Use_MortarandpestleProcedure;
 import net.mcreator.maltinmysticism.itemgroup.MaltinAlchemyItemGroup;
+import net.mcreator.maltinmysticism.gui.GuiExtractorCraftGui;
 import net.mcreator.maltinmysticism.MaltinmysticismModElements;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Collections;
+
+import io.netty.buffer.Unpooled;
 
 @MaltinmysticismModElements.ModElement.Tag
 public class BlockDestillerBlock extends MaltinmysticismModElements.ModElement {
@@ -169,15 +171,19 @@ public class BlockDestillerBlock extends MaltinmysticismModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			Direction direction = hit.getFace();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				Use_MortarandpestleProcedure.executeProcedure($_dependencies);
+			if (entity instanceof ServerPlayerEntity) {
+				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
+					@Override
+					public ITextComponent getDisplayName() {
+						return new StringTextComponent("Destiller");
+					}
+
+					@Override
+					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
+						return new GuiExtractorCraftGui.GuiContainerMod(id, inventory,
+								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
+					}
+				}, new BlockPos(x, y, z));
 			}
 			return ActionResultType.SUCCESS;
 		}
@@ -233,7 +239,7 @@ public class BlockDestillerBlock extends MaltinmysticismModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -291,12 +297,12 @@ public class BlockDestillerBlock extends MaltinmysticismModElements.ModElement {
 
 		@Override
 		public int getInventoryStackLimit() {
-			return 64;
+			return 1;
 		}
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return ChestContainer.createGeneric9X3(id, player, this);
+			return new GuiExtractorCraftGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override

@@ -47,7 +47,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 10,
+    "tickRate": 5,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -76,10 +76,10 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "guiBoundTo": "GuiMorterandpestleCraft",
+    "openGUIOnRightClick": true,
+    "inventorySize": 3,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -92,9 +92,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "Use_Mortarandpestle"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],
