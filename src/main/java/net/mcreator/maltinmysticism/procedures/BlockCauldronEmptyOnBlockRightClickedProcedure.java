@@ -11,7 +11,7 @@ import java.util.HashMap;
 @MaltinmysticismModElements.ModElement.Tag
 public class BlockCauldronEmptyOnBlockRightClickedProcedure extends MaltinmysticismModElements.ModElement {
 	public BlockCauldronEmptyOnBlockRightClickedProcedure(MaltinmysticismModElements instance) {
-		super(instance, 38);
+		super(instance, 72);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -52,16 +52,7 @@ public class BlockCauldronEmptyOnBlockRightClickedProcedure extends Maltinmystic
 			$_dependencies.put("y", y);
 			$_dependencies.put("z", z);
 			$_dependencies.put("world", world);
-			PutItemIntoCauldronProcedure.executeProcedure($_dependencies);
-		}
-		{
-			Map<String, Object> $_dependencies = new HashMap<>();
-			$_dependencies.put("entity", entity);
-			$_dependencies.put("x", x);
-			$_dependencies.put("y", y);
-			$_dependencies.put("z", z);
-			$_dependencies.put("world", world);
-			CauldronRecipeIndexProcedure.executeProcedure($_dependencies);
+			AddEssenceToCauldronProcedure.executeProcedure($_dependencies);
 		}
 	}
 }
