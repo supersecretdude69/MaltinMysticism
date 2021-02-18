@@ -36,6 +36,7 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.maltinmysticism.procedures.UseExtractorProcedure;
 import net.mcreator.maltinmysticism.procedures.CraftingCauldronBaseProcedure;
 import net.mcreator.maltinmysticism.MaltinmysticismModElements;
 import net.mcreator.maltinmysticism.MaltinmysticismMod;
@@ -140,6 +141,11 @@ public class GuiEssenceExtractorCraftGui extends MaltinmysticismModElements.ModE
 				}
 			}
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 78, 39) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(0, 0, 0);
+				}
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 36, 57) {
 				@Override
@@ -485,5 +491,12 @@ public class GuiEssenceExtractorCraftGui extends MaltinmysticismModElements.ModE
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 0 && changeType == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				UseExtractorProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 }

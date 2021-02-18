@@ -32,6 +32,9 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "UseExtractor"
+          },
           "name": "Slot #0",
           "x": 203,
           "y": 69
