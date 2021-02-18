@@ -25,5 +25,25 @@ public class CraftingCauldronBaseProcedure extends MaltinmysticismModElements.Mo
 			$_dependencies.put("entity", entity);
 			CatalineRecipeProcedure.executeProcedure($_dependencies);
 		}
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
+			MovilRecipeProcedure.executeProcedure($_dependencies);
+		}
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
+			CauldronRecipeArtificialMeatProcedure.executeProcedure($_dependencies);
+		}
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
+			CauldronRecipeArtificialFruitProcedure.executeProcedure($_dependencies);
+		}
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
+			CauldronRecipeFruitMeatProcedure.executeProcedure($_dependencies);
+		}
 	}
 }
