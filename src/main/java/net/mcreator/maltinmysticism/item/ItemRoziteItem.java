@@ -16,7 +16,7 @@ public class ItemRoziteItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_rozite")
 	public static final Item block = null;
 	public ItemRoziteItem(MaltinmysticismModElements instance) {
-		super(instance, 48);
+		super(instance, 22);
 	}
 
 	@Override

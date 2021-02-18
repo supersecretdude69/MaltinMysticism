@@ -13,7 +13,7 @@ import net.mcreator.maltinmysticism.MaltinmysticismModElements;
 @MaltinmysticismModElements.ModElement.Tag
 public class MaltinAlchemyItemGroup extends MaltinmysticismModElements.ModElement {
 	public MaltinAlchemyItemGroup(MaltinmysticismModElements instance) {
-		super(instance, 21);
+		super(instance, 44);
 	}
 
 	@Override

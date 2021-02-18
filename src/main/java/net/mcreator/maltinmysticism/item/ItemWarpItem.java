@@ -16,7 +16,7 @@ public class ItemWarpItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_warp")
 	public static final Item block = null;
 	public ItemWarpItem(MaltinmysticismModElements instance) {
-		super(instance, 52);
+		super(instance, 26);
 	}
 
 	@Override

@@ -14,7 +14,7 @@ import java.util.Map;
 @MaltinmysticismModElements.ModElement.Tag
 public class ClearSlotZeroProcedure extends MaltinmysticismModElements.ModElement {
 	public ClearSlotZeroProcedure(MaltinmysticismModElements instance) {
-		super(instance, 59);
+		super(instance, 51);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

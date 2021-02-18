@@ -13,7 +13,7 @@ import net.mcreator.maltinmysticism.MaltinmysticismModElements;
 @MaltinmysticismModElements.ModElement.Tag
 public class BenzoleFuel extends MaltinmysticismModElements.ModElement {
 	public BenzoleFuel(MaltinmysticismModElements instance) {
-		super(instance, 65);
+		super(instance, 57);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

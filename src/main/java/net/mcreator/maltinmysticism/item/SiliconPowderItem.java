@@ -16,7 +16,7 @@ public class SiliconPowderItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:silicon_powder")
 	public static final Item block = null;
 	public SiliconPowderItem(MaltinmysticismModElements instance) {
-		super(instance, 28);
+		super(instance, 7);
 	}
 
 	@Override

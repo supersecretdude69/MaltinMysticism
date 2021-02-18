@@ -35,7 +35,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class HomunculusSitEntity extends MaltinmysticismModElements.ModElement {
 	public static EntityType entity = null;
 	public HomunculusSitEntity(MaltinmysticismModElements instance) {
-		super(instance, 70);
+		super(instance, 31);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

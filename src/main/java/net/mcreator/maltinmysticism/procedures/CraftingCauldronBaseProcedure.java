@@ -10,7 +10,7 @@ import java.util.HashMap;
 @MaltinmysticismModElements.ModElement.Tag
 public class CraftingCauldronBaseProcedure extends MaltinmysticismModElements.ModElement {
 	public CraftingCauldronBaseProcedure(MaltinmysticismModElements instance) {
-		super(instance, 58);
+		super(instance, 50);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

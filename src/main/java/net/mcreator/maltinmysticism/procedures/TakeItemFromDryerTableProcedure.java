@@ -19,7 +19,7 @@ import java.util.Map;
 @MaltinmysticismModElements.ModElement.Tag
 public class TakeItemFromDryerTableProcedure extends MaltinmysticismModElements.ModElement {
 	public TakeItemFromDryerTableProcedure(MaltinmysticismModElements instance) {
-		super(instance, 64);
+		super(instance, 56);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

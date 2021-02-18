@@ -1,1 +1,11 @@
-{}
+{
+  "watersplash": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "maltinmysticism:splash",
+        "stream": false
+      }
+    ]
+  }
+}

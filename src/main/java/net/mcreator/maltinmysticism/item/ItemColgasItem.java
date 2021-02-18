@@ -16,7 +16,7 @@ public class ItemColgasItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_colgas")
 	public static final Item block = null;
 	public ItemColgasItem(MaltinmysticismModElements instance) {
-		super(instance, 39);
+		super(instance, 13);
 	}
 
 	@Override
