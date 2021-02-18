@@ -1,8 +1,0 @@
-{
-  "parent": "maltinmysticism:custom/inscriptionbench",
-  "textures": {
-    "all": "maltinmysticism:blocks/texture",
-    "particle": "maltinmysticism:blocks/mortarandpestletexture",
-    "0": "maltinmysticism:blocks/texture"
-  }
-}

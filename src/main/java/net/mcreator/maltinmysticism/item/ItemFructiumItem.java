@@ -16,7 +16,7 @@ public class ItemFructiumItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_fructium")
 	public static final Item block = null;
 	public ItemFructiumItem(MaltinmysticismModElements instance) {
-		super(instance, 17);
+		super(instance, 43);
 	}
 
 	@Override

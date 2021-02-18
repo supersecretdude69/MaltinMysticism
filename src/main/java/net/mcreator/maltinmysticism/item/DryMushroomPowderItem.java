@@ -16,7 +16,7 @@ public class DryMushroomPowderItem extends MaltinmysticismModElements.ModElement
 	@ObjectHolder("maltinmysticism:dry_mushroom_powder")
 	public static final Item block = null;
 	public DryMushroomPowderItem(MaltinmysticismModElements instance) {
-		super(instance, 11);
+		super(instance, 36);
 	}
 
 	@Override

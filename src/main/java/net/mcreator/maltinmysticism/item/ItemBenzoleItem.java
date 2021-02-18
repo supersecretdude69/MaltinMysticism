@@ -16,7 +16,7 @@ public class ItemBenzoleItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_benzole")
 	public static final Item block = null;
 	public ItemBenzoleItem(MaltinmysticismModElements instance) {
-		super(instance, 28);
+		super(instance, 65);
 	}
 
 	@Override

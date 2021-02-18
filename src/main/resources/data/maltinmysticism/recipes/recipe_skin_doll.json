@@ -1,0 +1,16 @@
+{
+  "group": "maltinmysticism",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maltinmysticism:skin"
+    },
+    {
+      "item": "maltinmysticism:meatdoll"
+    }
+  ],
+  "result": {
+    "item": "maltinmysticism:meat_doll_skin",
+    "count": 1
+  }
+}

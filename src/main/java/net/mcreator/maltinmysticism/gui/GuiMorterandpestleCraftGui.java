@@ -51,7 +51,7 @@ public class GuiMorterandpestleCraftGui extends MaltinmysticismModElements.ModEl
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public GuiMorterandpestleCraftGui(MaltinmysticismModElements instance) {
-		super(instance, 52);
+		super(instance, 60);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

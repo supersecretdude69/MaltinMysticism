@@ -16,7 +16,7 @@ public class ItemEnfaxItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_enfax")
 	public static final Item block = null;
 	public ItemEnfaxItem(MaltinmysticismModElements instance) {
-		super(instance, 16);
+		super(instance, 42);
 	}
 
 	@Override

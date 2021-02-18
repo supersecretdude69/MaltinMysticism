@@ -16,7 +16,7 @@ public class ItemWivexItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_wivex")
 	public static final Item block = null;
 	public ItemWivexItem(MaltinmysticismModElements instance) {
-		super(instance, 27);
+		super(instance, 53);
 	}
 
 	@Override

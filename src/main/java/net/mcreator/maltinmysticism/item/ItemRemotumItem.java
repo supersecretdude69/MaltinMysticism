@@ -16,7 +16,7 @@ public class ItemRemotumItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_remotum")
 	public static final Item block = null;
 	public ItemRemotumItem(MaltinmysticismModElements instance) {
-		super(instance, 21);
+		super(instance, 47);
 	}
 
 	@Override

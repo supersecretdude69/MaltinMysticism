@@ -21,7 +21,7 @@ public class MaltinAlchemyItemTabItem extends MaltinmysticismModElements.ModElem
 	@ObjectHolder("maltinmysticism:maltin_alchemy_item_tab")
 	public static final Item block = null;
 	public MaltinAlchemyItemTabItem(MaltinmysticismModElements instance) {
-		super(instance, 45);
+		super(instance, 24);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class ItemSilithiumItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_silithium")
 	public static final Item block = null;
 	public ItemSilithiumItem(MaltinmysticismModElements instance) {
-		super(instance, 23);
+		super(instance, 49);
 	}
 
 	@Override

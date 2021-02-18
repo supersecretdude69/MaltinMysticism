@@ -16,7 +16,7 @@ public class ItemGoldDustItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_gold_dust")
 	public static final Item block = null;
 	public ItemGoldDustItem(MaltinmysticismModElements instance) {
-		super(instance, 9);
+		super(instance, 30);
 	}
 
 	@Override

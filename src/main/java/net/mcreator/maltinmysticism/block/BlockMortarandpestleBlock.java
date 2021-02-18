@@ -81,7 +81,7 @@ public class BlockMortarandpestleBlock extends MaltinmysticismModElements.ModEle
 	@ObjectHolder("maltinmysticism:block_mortarandpestle")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BlockMortarandpestleBlock(MaltinmysticismModElements instance) {
-		super(instance, 2);
+		super(instance, 19);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

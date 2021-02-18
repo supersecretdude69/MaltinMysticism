@@ -16,7 +16,7 @@ public class ItemCoalPowderItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_coal_powder")
 	public static final Item block = null;
 	public ItemCoalPowderItem(MaltinmysticismModElements instance) {
-		super(instance, 4);
+		super(instance, 22);
 	}
 
 	@Override

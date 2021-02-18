@@ -17,7 +17,7 @@ import java.util.Map;
 @MaltinmysticismModElements.ModElement.Tag
 public class CatalineRecipeProcedure extends MaltinmysticismModElements.ModElement {
 	public CatalineRecipeProcedure(MaltinmysticismModElements instance) {
-		super(instance, 49);
+		super(instance, 58);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -16,7 +16,7 @@ public class ItemVeolineItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_veoline")
 	public static final Item block = null;
 	public ItemVeolineItem(MaltinmysticismModElements instance) {
-		super(instance, 25);
+		super(instance, 51);
 	}
 
 	@Override
