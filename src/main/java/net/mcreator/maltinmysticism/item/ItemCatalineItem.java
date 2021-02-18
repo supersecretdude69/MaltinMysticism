@@ -16,7 +16,7 @@ public class ItemCatalineItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_cataline")
 	public static final Item block = null;
 	public ItemCatalineItem(MaltinmysticismModElements instance) {
-		super(instance, 38);
+		super(instance, 12);
 	}
 
 	@Override

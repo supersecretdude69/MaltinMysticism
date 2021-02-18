@@ -80,7 +80,7 @@ public class BlockDestillerBlock extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:block_destiller")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 	public BlockDestillerBlock(MaltinmysticismModElements instance) {
-		super(instance, 25);
+		super(instance, 5);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

@@ -16,7 +16,7 @@ public class ItemConzaziteItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_conzazite")
 	public static final Item block = null;
 	public ItemConzaziteItem(MaltinmysticismModElements instance) {
-		super(instance, 40);
+		super(instance, 14);
 	}
 
 	@Override

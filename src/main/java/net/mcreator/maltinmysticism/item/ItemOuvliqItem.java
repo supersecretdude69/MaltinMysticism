@@ -16,7 +16,7 @@ public class ItemOuvliqItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:item_ouvliq")
 	public static final Item block = null;
 	public ItemOuvliqItem(MaltinmysticismModElements instance) {
-		super(instance, 46);
+		super(instance, 20);
 	}
 
 	@Override

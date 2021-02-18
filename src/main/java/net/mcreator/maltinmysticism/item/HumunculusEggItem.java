@@ -30,7 +30,7 @@ public class HumunculusEggItem extends MaltinmysticismModElements.ModElement {
 	@ObjectHolder("maltinmysticism:humunculus_egg")
 	public static final Item block = null;
 	public HumunculusEggItem(MaltinmysticismModElements instance) {
-		super(instance, 67);
+		super(instance, 29);
 	}
 
 	@Override

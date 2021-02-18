@@ -1,8 +1,0 @@
-{
-  "parent": "maltinmysticism:custom/cauldronmodel",
-  "textures": {
-    "all": "maltinmysticism:blocks/essenceextractor",
-    "particle": "maltinmysticism:blocks/essenceextractor",
-    "2": "maltinmysticism:blocks/cauldron_texture_empty"
-  }
-}
