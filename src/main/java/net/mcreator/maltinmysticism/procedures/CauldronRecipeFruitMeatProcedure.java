@@ -8,7 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.maltinmysticism.item.ArtificialFruitItem;
+import net.mcreator.maltinmysticism.item.ArtificialFruitMeatItem;
 import net.mcreator.maltinmysticism.MaltinmysticismModElements;
 
 import java.util.function.Supplier;
@@ -257,7 +257,7 @@ public class CauldronRecipeFruitMeatProcedure extends MaltinmysticismModElements
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
-						ItemStack _setstack = new ItemStack(ArtificialFruitItem.block, (int) (1));
+						ItemStack _setstack = new ItemStack(ArtificialFruitMeatItem.block, (int) (1));
 						_setstack.setCount((int) 1);
 						((Slot) ((Map) invobj).get((int) (0))).putStack(_setstack);
 						_current.detectAndSendChanges();

@@ -6,8 +6,11 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.maltinmysticism.entity.HumonculusSlimeEntity;
+import net.mcreator.maltinmysticism.entity.HumonculusSkeleEntity;
+import net.mcreator.maltinmysticism.entity.HumonculusMushroomEntity;
 import net.mcreator.maltinmysticism.entity.HumonculusFireEntity;
 import net.mcreator.maltinmysticism.entity.HumonculusEnderEntity;
 import net.mcreator.maltinmysticism.MaltinmysticismModElements;
@@ -63,6 +66,43 @@ public class HumonculusFireOnEntityTickUpdateProcedure extends MaltinmysticismMo
 							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 						}
 					});
+				}
+			}
+			if ((entity instanceof HumonculusSkeleEntity.CustomEntity)) {
+				{
+					final ItemStack _setstack = new ItemStack(Items.BONE, (int) (1));
+					final int _sltid = (int) (0);
+					_setstack.setCount((int) 1);
+					entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						if (capability instanceof IItemHandlerModifiable) {
+							((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+						}
+					});
+				}
+			}
+			if ((entity instanceof HumonculusMushroomEntity.CustomEntity)) {
+				if ((Math.random() > 0.5)) {
+					{
+						final ItemStack _setstack = new ItemStack(Blocks.BROWN_MUSHROOM, (int) (1));
+						final int _sltid = (int) (0);
+						_setstack.setCount((int) 1);
+						entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable) {
+								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+							}
+						});
+					}
+				} else {
+					{
+						final ItemStack _setstack = new ItemStack(Blocks.RED_MUSHROOM, (int) (1));
+						final int _sltid = (int) (0);
+						_setstack.setCount((int) 1);
+						entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable) {
+								((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+							}
+						});
+					}
 				}
 			}
 		} else {
