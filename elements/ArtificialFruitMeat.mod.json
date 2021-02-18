@@ -1,0 +1,28 @@
+{
+  "_fv": 13,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "freat",
+    "customModelName": "Normal",
+    "name": "Artificial Meat-Fruit",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Combines the fruit and meat into one! This is the perfect meal for a human!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:MaltinAlchemy"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 20,
+    "saturation": 0.7999999999999999,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

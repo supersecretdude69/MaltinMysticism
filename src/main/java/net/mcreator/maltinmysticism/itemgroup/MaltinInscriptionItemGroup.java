@@ -1,17 +1,9 @@
 
 package net.mcreator.maltinmysticism.itemgroup;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-
-import net.mcreator.maltinmysticism.item.InscriptionTabletItem;
-import net.mcreator.maltinmysticism.MaltinmysticismModElements;
-
 @MaltinmysticismModElements.ModElement.Tag
 public class MaltinInscriptionItemGroup extends MaltinmysticismModElements.ModElement {
+
 	public MaltinInscriptionItemGroup(MaltinmysticismModElements instance) {
 		super(instance, 61);
 	}
@@ -31,5 +23,7 @@ public class MaltinInscriptionItemGroup extends MaltinmysticismModElements.ModEl
 			}
 		}.setBackgroundImageName("item_search.png");
 	}
+
 	public static ItemGroup tab;
+
 }

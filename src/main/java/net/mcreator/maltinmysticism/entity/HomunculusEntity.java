@@ -13,31 +13,48 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.ai.goal.FollowOwnerGoal;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.entity.AgeableEntity;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.maltinmysticism.procedures.HomunculusOnEntityTickUpdateProcedure;
+import net.mcreator.maltinmysticism.procedures.ConditionSNotittingProcedure;
+import net.mcreator.maltinmysticism.procedures.ClickOnHumonProcedure;
 import net.mcreator.maltinmysticism.MaltinmysticismModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
+
+import com.google.common.collect.ImmutableMap;
 
 @MaltinmysticismModElements.ModElement.Tag
 public class HomunculusEntity extends MaltinmysticismModElements.ModElement {
@@ -69,7 +86,7 @@ public class HomunculusEntity extends MaltinmysticismModElements.ModElement {
 			};
 		});
 	}
-	public static class CustomEntity extends CreatureEntity {
+	public static class CustomEntity extends TameableEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -89,11 +106,102 @@ public class HomunculusEntity extends MaltinmysticismModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+
+				@Override
+				public boolean shouldContinueExecuting() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldContinueExecuting() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+			});
+			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+
+				@Override
+				public boolean shouldContinueExecuting() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldContinueExecuting() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+			});
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+
+				@Override
+				public boolean shouldContinueExecuting() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldContinueExecuting() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+			});
+			this.targetSelector.addGoal(4, new HurtByTargetGoal(this) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+
+				@Override
+				public boolean shouldContinueExecuting() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldContinueExecuting() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+			});
 			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(6, new SwimGoal(this));
+			this.goalSelector.addGoal(6, new SwimGoal(this) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+
+				@Override
+				public boolean shouldContinueExecuting() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldContinueExecuting() && ConditionSNotittingProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+			});
 		}
 
 		@Override
@@ -117,6 +225,81 @@ public class HomunculusEntity extends MaltinmysticismModElements.ModElement {
 		}
 
 		@Override
+		public boolean processInteract(PlayerEntity sourceentity, Hand hand) {
+			ItemStack itemstack = sourceentity.getHeldItem(hand);
+			boolean retval = true;
+			Item item = itemstack.getItem();
+			if (itemstack.getItem() instanceof SpawnEggItem) {
+				retval = super.processInteract(sourceentity, hand);
+			} else if (this.world.isRemote) {
+				retval = this.isTamed() && this.isOwner(sourceentity) || this.isBreedingItem(itemstack);
+			} else {
+				if (this.isTamed()) {
+					if (this.isOwner(sourceentity)) {
+						if (item.isFood() && this.isBreedingItem(itemstack) && this.getHealth() < this.getMaxHealth()) {
+							this.consumeItemFromStack(sourceentity, itemstack);
+							this.heal((float) item.getFood().getHealing());
+							retval = true;
+						} else if (this.isBreedingItem(itemstack) && this.getHealth() < this.getMaxHealth()) {
+							this.consumeItemFromStack(sourceentity, itemstack);
+							this.heal(4);
+							retval = true;
+						} else {
+							retval = super.processInteract(sourceentity, hand);
+						}
+					}
+				} else if (this.isBreedingItem(itemstack)) {
+					this.consumeItemFromStack(sourceentity, itemstack);
+					if (this.rand.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
+						this.setTamedBy(sourceentity);
+						this.world.setEntityState(this, (byte) 7);
+					} else {
+						this.world.setEntityState(this, (byte) 6);
+					}
+					this.enablePersistence();
+					retval = true;
+				} else {
+					retval = super.processInteract(sourceentity, hand);
+					if (retval)
+						this.enablePersistence();
+				}
+			}
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ClickOnHumonProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				HomunculusOnEntityTickUpdateProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
@@ -128,6 +311,21 @@ public class HomunculusEntity extends MaltinmysticismModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+		}
+
+		@Override
+		public AgeableEntity createChild(AgeableEntity ageable) {
+			CustomEntity retval = (CustomEntity) entity.create(this.world);
+			retval.onInitialSpawn(this.world, this.world.getDifficultyForLocation(new BlockPos(retval)), SpawnReason.BREEDING,
+					(ILivingEntityData) null, (CompoundNBT) null);
+			return retval;
+		}
+
+		@Override
+		public boolean isBreedingItem(ItemStack stack) {
+			if (stack == null)
+				return false;
+			return false;
 		}
 	}
 

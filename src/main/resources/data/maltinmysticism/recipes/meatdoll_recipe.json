@@ -1,0 +1,30 @@
+{
+  "group": "maltinmysticism",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "maltinmysticism:unknown_element"
+    },
+    "3": {
+      "item": "maltinmysticism:unknown_element"
+    },
+    "4": {
+      "item": "minecraft:bone"
+    },
+    "5": {
+      "item": "maltinmysticism:unknown_element"
+    },
+    "7": {
+      "item": "maltinmysticism:unknown_element"
+    }
+  },
+  "result": {
+    "item": "maltinmysticism:meatdoll",
+    "count": 1
+  }
+}

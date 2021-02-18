@@ -57,7 +57,7 @@
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "inventorySize": 1,
     "inventoryStackSize": 64,
     "disableCollisions": false,
     "ridable": false,
@@ -93,11 +93,17 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "onRightClickedOn": {
+      "name": "ClickOnHumon"
+    },
+    "onMobTickUpdate": {
+      "name": "HomunculusOnEntityTickUpdate"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
-    "tameable": false,
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">ConditionSNotitting,ConditionSNotitting</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">ConditionSNotitting,ConditionSNotitting</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">ConditionSNotitting,ConditionSNotitting</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">ConditionSNotitting,ConditionSNotitting</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">ConditionSNotitting,ConditionSNotitting</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
+    "tameable": true,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {

@@ -1,0 +1,16 @@
+{
+  "group": "maltinmysticism",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "maltinmysticism:unknown_element"
+    },
+    {
+      "item": "maltinmysticism:unknown_element"
+    }
+  ],
+  "result": {
+    "item": "maltinmysticism:unknown_element",
+    "count": 1
+  }
+}

@@ -1,19 +1,11 @@
 package net.mcreator.maltinmysticism.procedures;
 
-import net.minecraft.inventory.container.Slot;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.maltinmysticism.MaltinmysticismModElements;
-
-import java.util.function.Supplier;
-import java.util.Map;
-
 @MaltinmysticismModElements.ModElement.Tag
 public class TakeFromInscriptionBenchShiftProcedure extends MaltinmysticismModElements.ModElement {
+
 	public TakeFromInscriptionBenchShiftProcedure(MaltinmysticismModElements instance) {
 		super(instance, 66);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -22,7 +14,9 @@ public class TakeFromInscriptionBenchShiftProcedure extends MaltinmysticismModEl
 				System.err.println("Failed to load dependency entity for procedure TakeFromInscriptionBenchShift!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
+
 		double RepeatTimer = 0;
 		RepeatTimer = (double) 1;
 		{
@@ -54,5 +48,7 @@ public class TakeFromInscriptionBenchShiftProcedure extends MaltinmysticismModEl
 			}
 			RepeatTimer = (double) ((RepeatTimer) + 1);
 		}
+
 	}
+
 }

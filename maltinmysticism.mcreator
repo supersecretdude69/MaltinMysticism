@@ -660,12 +660,7 @@
       "ids": {},
       "registry_name": "inscription_gui_open",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
