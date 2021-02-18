@@ -811,49 +811,228 @@
           }
         ]
       }
+    },
+    {
+      "name": "Meatdoll",
+      "type": "item",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meatdoll"
+    },
+    {
+      "name": "MeatdollRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meatdoll_recipe"
+    },
+    {
+      "name": "Skin",
+      "type": "item",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skin"
+    },
+    {
+      "name": "SkinRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skin_recipe"
+    },
+    {
+      "name": "MeatDollSkin",
+      "type": "item",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meat_doll_skin"
+    },
+    {
+      "name": "RecipeSkinDoll",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe_skin_doll"
+    },
+    {
+      "name": "HumonculusFire",
+      "type": "mob",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "humonculus_fire"
+    },
+    {
+      "name": "GuiHumunculus",
+      "type": "gui",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_humunculus"
+    },
+    {
+      "name": "HumonculusFireOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "humonculus_fire_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HumonculusSlime",
+      "type": "mob",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "humonculus_slime"
+    },
+    {
+      "name": "HumonculusEnder",
+      "type": "mob",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "humonculus_ender"
+    },
+    {
+      "name": "MeatDollSkinFire",
+      "type": "item",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meat_doll_skin_fire"
+    },
+    {
+      "name": "MeatDollSkinSlime",
+      "type": "item",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meat_doll_skin_slime"
+    },
+    {
+      "name": "MeatDollSkinEnd",
+      "type": "item",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meat_doll_skin_end"
+    },
+    {
+      "name": "MeatDollSkinFireRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meat_doll_skin_fire_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "entity.maltinmysticism.humonculus_ender": "Ender Homunculus",
       "item.maltinmysticism.item_infax": "Infax",
-      "item.maltinmysticism.item_silithium": "Silithium",
+      "entity.maltinmysticism.humonculus_fire": "Blaze Homunculus",
       "item.maltinmysticism.maltin_alchemy_item_tab": "Maltin Alchemy Item Tab",
-      "item.maltinmysticism.item_gold_dust": "Gold Powder",
-      "item.maltinmysticism.recipe_note_two": "Movil Recipe",
       "item.maltinmysticism.item_remotum": "Remotum",
       "item.maltinmysticism.item_fructium": "Fructium",
-      "item.maltinmysticism.recipe_note_one": "Cataline Recipe",
-      "item.maltinmysticism.item_cataline": "Cataline",
+      "item.maltinmysticism.humonculus_fire_spawn_egg": "Blaze Homunculus Spawn Egg",
       "item.maltinmysticism.item_tempest": "Tempest",
-      "item.maltinmysticism.homunculus_spawn_egg": "Homunculus Spawn Egg",
       "block.maltinmysticism.block_mortarandpestle": "Mortar and Pestle",
-      "item.maltinmysticism.artificial_fruit": "Artificial Fruit",
       "item.maltinmysticism.item_lapiz_powder": "Lapiz Powder",
       "block.maltinmysticism.block_cauldron_empty": "Empty Cauldron",
       "entity.maltinmysticism.homunculus": "Homunculus",
+      "item.maltinmysticism.humonculus_ender_spawn_egg": "Ender Homunculus Spawn Egg",
       "item.maltinmysticism.item_ouvliq": "Ouvliq",
       "item.maltinmysticism.item_veoline": "Veoline",
-      "item.maltinmysticism.item_colgas": "Colgas",
       "item.maltinmysticism.item_iron_dust": "Iron Powder",
       "item.maltinmysticism.dry_mushroom_powder": "Dry Mushroom Powder",
-      "itemGroup.tabmaltin_alchemy": "Maltin Alchemy",
-      "item.maltinmysticism.item_silver_dust": "Silver Powder",
       "block.maltinmysticism.block_destiller": "Destiller",
       "item.maltinmysticism.item_warp": "Warp",
-      "item.maltinmysticism.artificial_meat": "Artificial Meat",
       "item.maltinmysticism.item_movil": "Movil",
-      "item.maltinmysticism.item_coal_powder": "Coal Powder",
-      "item.maltinmysticism.item_conzazite": "Conzazite",
       "item.maltinmysticism.item_detontium": "Detontium",
-      "item.maltinmysticism.item_enfax": "Enfax",
       "item.maltinmysticism.silicon_powder": "Silicon Powder",
       "item.maltinmysticism.item_rozite": "Rozite",
+      "item.maltinmysticism.meat_doll_skin": "Meat Doll With Skin",
       "item.maltinmysticism.item_wivex": "Wivex",
       "item.maltinmysticism.artificial_fruit_meat": "Artificial Meat-Fruit",
-      "item.maltinmysticism.item_salt": "Salt Powder",
       "item.maltinmysticism.humunculus_egg": "Homunculus Egg",
+      "item.maltinmysticism.humonculus_slime_spawn_egg": "Slime Homunculus Spawn Egg",
+      "item.maltinmysticism.item_silithium": "Silithium",
+      "entity.maltinmysticism.humonculus_slime": "Slime Homunculus",
+      "item.maltinmysticism.item_gold_dust": "Gold Powder",
+      "item.maltinmysticism.recipe_note_two": "Movil Recipe",
+      "item.maltinmysticism.meat_doll_skin_fire": "Fire Homunculus",
+      "item.maltinmysticism.recipe_note_one": "Cataline Recipe",
+      "item.maltinmysticism.item_cataline": "Cataline",
+      "item.maltinmysticism.homunculus_spawn_egg": "Homunculus Spawn Egg",
+      "item.maltinmysticism.artificial_fruit": "Artificial Fruit",
+      "item.maltinmysticism.item_colgas": "Colgas",
+      "item.maltinmysticism.meat_doll_skin_end": "End Homunculus",
+      "itemGroup.tabmaltin_alchemy": "Maltin Alchemy",
+      "item.maltinmysticism.item_silver_dust": "Silver Powder",
+      "item.maltinmysticism.skin": "Skin",
+      "item.maltinmysticism.artificial_meat": "Artificial Meat",
+      "item.maltinmysticism.meatdoll": "Meat doll",
+      "item.maltinmysticism.item_coal_powder": "Coal Powder",
+      "item.maltinmysticism.item_conzazite": "Conzazite",
+      "item.maltinmysticism.item_enfax": "Enfax",
+      "item.maltinmysticism.meat_doll_skin_slime": "Slime Homunculus",
+      "item.maltinmysticism.item_salt": "Salt Powder",
       "item.maltinmysticism.item_benzole": "Benzole"
     }
   },
