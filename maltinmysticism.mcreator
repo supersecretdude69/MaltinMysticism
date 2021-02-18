@@ -1062,6 +1062,11 @@
       "item.maltinmysticism.item_remotum": "Remotum",
       "item.maltinmysticism.item_fructium": "Fructium",
       "item.maltinmysticism.humonculus_fire_spawn_egg": "Blaze Homunculus Spawn Egg",
+<<<<<<< HEAD
+=======
+      "subtitles.watersplash": "",
+      "item.maltinmysticism.homunculus_sit_spawn_egg": "Homunculus (Sitting) Spawn Egg",
+>>>>>>> 1ca03690cdb1f0bdf6bad2e5860d71abf24a7f46
       "block.maltinmysticism.essence_extractor": "Essense Extractor",
       "item.maltinmysticism.item_tempest": "Tempest",
       "item.maltinmysticism.meat_doll_skin_mushroom": "Mushroom Homunculus",
